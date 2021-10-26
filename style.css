@@ -1,0 +1,27 @@
+html {
+    border: 2px solid red;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    border: 2px solid rgb(224, 11, 57);
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 480px;
+}
+
+.rowBox {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid blue; */
+    width: 100%;
+}
+
+.columnBox {
+    border: 1px solid lightgreen;
+    flex-wrap: wrap;
+    flex: 1;
+}
