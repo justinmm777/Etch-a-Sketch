@@ -6,6 +6,10 @@ html {
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#outArea {
+    background-color: darkgray;
+}
 .btn {
     display: flex;
     justify-content: center;
@@ -13,6 +17,7 @@ html {
     justify-content: space-between;
 }
 #btnClear,
+#btnColor,
 #btnGrid {
     padding: 10px 45px;
     background-color: lightskyblue;
@@ -37,11 +42,7 @@ html {
 }
 
 .columnBox {
-    /* border: 1px solid rgb(248, 248, 248); */
+    /* border: 1px solid rgb(189, 216, 189); */
     flex-wrap: wrap;
     flex: 1;
-}
-
-.grid {
-    border: 1px solid green;
 }
