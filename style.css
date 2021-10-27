@@ -1,8 +1,24 @@
 html {
+    display: flex;
     border: 2px solid red;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+#btnClear,
+#btnGrid {
+    padding: 10px 45px;
+    background-color: lightskyblue;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 #container {
@@ -21,7 +37,11 @@ html {
 }
 
 .columnBox {
-    border: 1px solid lightgreen;
+    /* border: 1px solid rgb(248, 248, 248); */
     flex-wrap: wrap;
     flex: 1;
+}
+
+.grid {
+    border: 1px solid green;
 }
