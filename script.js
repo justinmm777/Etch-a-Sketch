@@ -79,8 +79,7 @@ btnGrid.addEventListener('click', myGrid);
 
 function myGrid() {
     document.querySelectorAll('.columnBox').forEach(item => {
-        item.style.border = '1px solid green';
-        // '1px solid #f9fbfd'
+        item.style.border = '1px solid #f9fbfd';
     })
     
 }

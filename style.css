@@ -1,47 +1,85 @@
 html {
     display: flex;
-    border: 2px solid red;
     height: 100vh;
     justify-content: center;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(182, 210, 226);
+    background-color: #e0e0e0;
+}
+
+.heading {
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 51px;
+background: #e0e0e0;
+box-shadow:  10px 10px 20px #747474,
+             -10px -10px 20px #ffffff;
+padding: 10px 35px;
+margin-bottom: 50px;
 }
 
 .btn {
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     justify-content: space-between;
 }
 #btnClear,
-#btnColor,
 #btnGrid {
-    padding: 10px 45px;
-    background-color: lightskyblue;
-    border-radius: 2rem;
+    border-radius: 43px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  8px 8px 16px #727272,
+                 -8px -8px 16px #ffffff;
+    padding: 10px 35px;
     font-weight: bold;
     font-size: 25px;
+    border: none;
+}
+
+#btnColor{
+    border-radius: 43px;
+    background: linear-gradient(145deg, #eb5d5d, #f0f0f0);
+    box-shadow:  8px 8px 16px #727272,
+                 -8px -8px 16px #ffffff;
+    padding: 10px 35px;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+}
+
+
+#btnClear:hover,
+#btnColor:hover,
+#btnGrid:hover {
+    box-shadow:  15px 15px 30px #5a5a5a,
+             -15px -15px 30px #ffffff;
+}
+#btnClear:active,
+#btnColor:active,
+#btnGrid:active{
+    border-radius: 45px;
+    background: #e0e0e0;
+    box-shadow: inset 15px 15px 30px #5a5a5a,
+            inset -15px -15px 30px #ffffff;
 }
 
 #container {
-    /* border: 2px solid rgb(224, 11, 57); */
     display: flex;
     flex-wrap: wrap;
     width: 480px;
     height: 480px;
-    background-color: white;
+    background: #ffffff;
+    box-shadow:  10px 10px 20px #858585,
+                 -10px -10px 20px #ffffff;
 }
 
 .rowBox {
     display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid blue; */
     width: 100%;
 }
 
 .columnBox {
-    /* border: 1px solid rgb(189, 216, 189); */
     flex-wrap: wrap;
     flex: 1;
 }
