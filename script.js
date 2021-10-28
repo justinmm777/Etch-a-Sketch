@@ -28,30 +28,13 @@ function gridBlack(){
 }
 gridBlack();
 
-// Generate random color
-function gridRandomColor(){
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
-    document.querySelectorAll('.columnBox').forEach(item => {
-        item.addEventListener('mouseenter', event =>{
-            item.style.backgroundColor = "#" + randomColor;
-        })
-    })
-}
-
-const color = document.getElementById('btnColor');
-color.addEventListener('click', event => {
-    gridRandomColor();
-})
-
-
-
 // Event listener for clear button and getting user input
 const clear = document.getElementById('btnClear');
 
 clear.addEventListener('click', event => {
     let num;
     do {
-        num = Number(window.prompt("Enter number of squres"));
+        num = Number(window.prompt("Enter number of squres between 1 to 100."));
     } while( num > 100 || num < 1)
     columnNum = num;
     rowNum = num;
@@ -68,6 +51,25 @@ clear.addEventListener('click', event => {
     makeGrid(rowNum, columnNum);
     gridBlack();
 });
+
+// Generate random color
+function generateRandomColor() {
+    let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    return randomColor;
+}
+// Grid to random color
+function gridRandomColor() {
+    document.querySelectorAll('.columnBox').forEach(item => {
+        item.addEventListener('mouseenter', event => {
+            item.style.backgroundColor = generateRandomColor();
+        })
+    })
+}
+// Add girdRandomColor function to the button color
+const colorBtn = document.getElementById('btnColor');
+colorBtn.addEventListener('click', event => {
+    gridRandomColor();
+})
 
 
 // Show grid
