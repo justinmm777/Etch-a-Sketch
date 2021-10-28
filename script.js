@@ -34,7 +34,7 @@ const clear = document.getElementById('btnClear');
 clear.addEventListener('click', event => {
     let num;
     do {
-        num = Number(window.prompt("Enter number of squres between 1 to 100."));
+        num = Number(window.prompt("Enter number of squares between 1 to 100."));
     } while( num > 100 || num < 1)
     columnNum = num;
     rowNum = num;
