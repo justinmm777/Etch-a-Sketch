@@ -57,6 +57,7 @@ function generateRandomColor() {
     let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
     return randomColor;
 }
+
 // Grid to random color
 function gridRandomColor() {
     document.querySelectorAll('.columnBox').forEach(item => {
@@ -65,23 +66,21 @@ function gridRandomColor() {
         })
     })
 }
+
 // Add girdRandomColor function to the button color
 const colorBtn = document.getElementById('btnColor');
 colorBtn.addEventListener('click', event => {
     gridRandomColor();
 })
 
-
 // Show grid
 const btnGrid = document.getElementById('btnGrid');
-
 btnGrid.addEventListener('click', myGrid);
 
 function myGrid() {
     document.querySelectorAll('.columnBox').forEach(item => {
         item.style.border = '1px solid #f9fbfd';
-    })
-    
+    }) 
 }
 
 

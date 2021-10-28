@@ -10,12 +10,12 @@ html {
 .heading {
     font-size: 55px;
     font-family: 'Roboto', sans-serif;
-    border-radius: 51px;
-background: #e0e0e0;
-box-shadow:  10px 10px 20px #747474,
-             -10px -10px 20px #ffffff;
-padding: 10px 35px;
-margin-bottom: 50px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:  10px 10px 20px #f3f1f1,
+                -10px -10px 20px #ffffff;
+    padding: 10px 35px;
+    margin-bottom: 50px;
 }
 
 .btn {
@@ -71,6 +71,7 @@ margin-bottom: 50px;
     background: #ffffff;
     box-shadow:  10px 10px 20px #858585,
                  -10px -10px 20px #ffffff;
+    margin-bottom: 25px;
 }
 
 .rowBox {
@@ -82,4 +83,17 @@ margin-bottom: 50px;
 .columnBox {
     flex-wrap: wrap;
     flex: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+/* Media Queries */
+@media only screen and (max-width:500px) {
+    .heading, .btn, #container, .footer {
+        width: 100%;
+    }
 }
